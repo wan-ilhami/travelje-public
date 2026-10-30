@@ -18,7 +18,7 @@ Flight fares, hotel prices, exchange rates, weather and public holidays come fro
 
 - Email and password accounts (new accounts confirm their email first) and Google sign-in.
 - Optional two-factor login with an authenticator app.
-- Workspaces: a personal one for every user, plus company workspaces with roles (owner, admin, editor, viewer) and an approval step for trips.
+- Workspaces: a personal one for every user, plus company workspaces with roles, custom permissions and an approval step for trips.
 - Every server query is scoped to the caller's workspace, and admin actions are audited.
 
 ## Data
@@ -27,4 +27,4 @@ Postgres, with the schema in numbered SQL migrations applied in order. Optional 
 
 ## Quality gates
 
-Type checks, a lint with zero warnings, small assert scripts for the pure logic (money, dates, merging, roles), and browser end-to-end tests that run before every deploy.
+Type checks, a lint with zero warnings, small assert scripts for the pure logic (money, dates, merging, roles), and browser end-to-end tests.
